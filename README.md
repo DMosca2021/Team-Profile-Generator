@@ -1,6 +1,9 @@
 # Team Profile Generator 
+Week 10 homework
 
 ## Description 
+
+The object of this homework is to demonstrate my knowledge of object oriented programming. 
 
 ## User Story 
 ```md 
@@ -32,7 +35,7 @@ THEN I exit the application, and the HTML is generated
 
 ## Access to Repository
 
-[Repo Link]()
+[Repo Link](https://github.com/DMosca2021/dm_Team-Profile-Generator)
 
 ## Screenshot of generated file
 
@@ -40,11 +43,12 @@ THEN I exit the application, and the HTML is generated
 
 ## Video Demo 
 
-![Video Demo](https://github.com/DMosca2021/dm_Team-Profile-Generator)
+![Video Demo]()
 
 ## Credits
 Credit for this project goes to my instructor, teachers assistant, tutor, and fellow students in the DUbootcamp who provided the information and resources I needed to complete this task.
 
 - [Jest Docs](https://jestjs.io/docs/getting-started)
 - [Node.js Docs](https://nodejs.org/en/docs/)
+- [Bulma Docs](https://bulma.io/documentation/)
 - [Google](https://www.google.com/)
