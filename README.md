@@ -37,8 +37,11 @@ THEN I exit the application, and the HTML is generated
 
 [Repo Link](https://github.com/DMosca2021/dm_Team-Profile-Generator)
 
-## Screenshot of generated file
+## Screenshot
+- Sample of HTML before generation:
+![Screenshot](./assets/images/teamprofilegen_scrnsht.png)
 
+- Sample of Generated HTML:
 ![Screenshot]()
 
 ## Video Demo 
