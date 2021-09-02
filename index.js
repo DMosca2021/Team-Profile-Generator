@@ -4,14 +4,13 @@ const fs = require('fs');
 const path = require('path');
 const jest = require('jest');
 
-const Employee = require('./lib/employee');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 
 const DIST_DIR = path.resolve(__dirname, 'dist');
 const outputPath = path.join(DIST_DIR, 'index.html');
-const render = require("./src/sampleIndex.js")
+const render = require("./src/template")
 
 const teamArray = [];
 const idArray = [];
@@ -94,7 +93,7 @@ function initApp() {
                     createIntern();
                     break;
                 default:
-                    generateHTML()    ;
+                    generateHTML(teamArray);
             }
         });
     }
@@ -147,8 +146,8 @@ function initApp() {
             },
         ]) .then(data => {
             const engineer = new Engineer(data.engineerName, data.engineerId, data.engineerEmail, data.engineerGithub);
-            teamArr.push(engineer);
-            idArr.push(data.engineerId);
+            teamArray.push(engineer);
+            idArray.push(data.engineerId);
             createTeam();
         });
     }
@@ -201,8 +200,8 @@ function initApp() {
             },
         ]) .then(data => {
             const intern = new Intern(data.internName, data.internId, data.internEmail, data.internSchool);
-            teamArr.push(intern);
-            idArr.push(data.internId);
+            teamArray.push(intern);
+            idArray.push(data.internId);
             createTeam();
         });
     }
@@ -212,7 +211,9 @@ function initApp() {
             fs.mkdirSync(DIST_DIR);
         }
         console.log("Generating Team Profile.... ");
-        fs.writeFileSync(outputPath, render(teamArr), "utf-8");
+        console.log(teamArray);
+        console.log(idArray);
+        fs.writeFileSync(outputPath, render(teamArray), "utf-8");
     }
 
     createManager();
