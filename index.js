@@ -101,7 +101,7 @@ function initApp() {
             {
                 type: "input",
                 name: "engineerName",
-                message: "Enter engineer's name.",
+                message: "Enter engineer's name:",
                 validate: answer => {
                     if (answer !== "") {
                         return true;
@@ -112,7 +112,7 @@ function initApp() {
             {
                 type: "input",
                 name: "engineerId",
-                message: "Enter engineer's ID number.",
+                message: "Enter engineer's ID number:",
                 validate: answer => {
                     if (answer !== "") {
                         return true;
@@ -123,7 +123,7 @@ function initApp() {
             {
                 type: "input",
                 name: "engineerEmail",
-                message: "Enter engineer's email address.",
+                message: "Enter engineer's email address:",
                 validate: answer => {
                     if (answer !== "") {
                         return true;
@@ -134,7 +134,7 @@ function initApp() {
             {
                 type: "input",
                 name: "engineerGithub",
-                message: "Enter engineer's GitHub username?",
+                message: "Enter engineer's GitHub username:",
                 validate: answer => {
                     if (answer !== "") {
                         return true;
@@ -154,7 +154,7 @@ function initApp() {
             {
                 type: "input",
                 name: "internName",
-                message: "Enter intern's name.",
+                message: "Enter intern's name:",
                 validate: answer => {
                     if (answer !== "") {
                         return true;
@@ -165,7 +165,7 @@ function initApp() {
             {
                 type: "input",
                 name: "internId",
-                message: "Enter intern's ID number?",
+                message: "Enter intern's ID number:",
                 validate: answer => {
                     if (answer !== "") {
                         return true;
@@ -176,7 +176,7 @@ function initApp() {
             {
                 type: "input",
                 name: "internEmail",
-                message: "Enter intern's email address?",
+                message: "Enter intern's email address:",
                 validate: answer => {
                     if (answer !== "") {
                         return true;
@@ -187,7 +187,7 @@ function initApp() {
             {
                 type: "input",
                 name: "internSchool",
-                message: "Where does the intern attend school?",
+                message: "Where does the intern attend school:",
                 validate: answer => {
                     if (answer !== "") {
                         return true;

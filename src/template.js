@@ -1,7 +1,4 @@
-// const Engineer = require("../lib/engineer");
-// const Intern = require("../lib/intern");
-// const Manager = require("../lib/manager");
-
+// Function to insert data into html and generating html file. 
 module.exports = team => {
   return `<!DOCTYPE html>
   <html lang="en">
@@ -13,19 +10,19 @@ module.exports = team => {
       <title>Team Profile Generator</title>
   </head>
   <body>
-      <header class="columns is-mobile">
+      <header class="columns is-full is-mobile">
         <section class="column hero">
           <div class="hero-body has-text-centered">
             <p class="title">
               Team Profile Generator
             </p>
-            <p class="subtitle has-text-white">
+            <p class="subtitle has-text-info">
               My current team:
             </p>
           </div>
         </section>
       </header>
-      <main class="column is-mobile">
+      <main class="column has-background-info-dark is-mobile">
         ${createProfile(team)}
       </main>
       <footer class="footer">
@@ -42,6 +39,7 @@ module.exports = team => {
 };
 
 const createProfile = team => {
+  // Adds manager information to html
   const createManager = manager => {
       return `<div class="column is-one-third card is-centered my-4">
       <div class="card-content">
@@ -67,7 +65,7 @@ const createProfile = team => {
       </div>
     </div>`
 };
-
+  // Adds engineer information to html
   const createEngineer = engineer => {
       return `<div class="column is-one-third card is-centered my-4">
       <div class="card-content">
@@ -94,6 +92,7 @@ const createProfile = team => {
     </div>`
   };
 
+  // Adds intern information to html
   const createIntern = intern => {
       return `<div class="column is-one-third card is-centered my-4">
       <div class="card-content">
@@ -120,6 +119,7 @@ const createProfile = team => {
     </div>`
   }
 
+  // Adds employee information to html 
   const html = [];
 
     html.push(team
