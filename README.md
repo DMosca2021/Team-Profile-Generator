@@ -39,14 +39,14 @@ THEN I exit the application, and the HTML is generated
 
 ## Screenshot
 - Sample of HTML before generation:
-![Screenshot](./assets/images/teamprofilegen_scrnsht.png)
+![Screenshot](./assets/images/TeamProfGen_pregenerated.png)
 
 - Sample of Generated HTML:
-![Screenshot]()
+![Screenshot](./assets/images/TeamProfGen_generated.png)
 
 ## Video Demo 
 
-![Video Demo]()
+![Video Demo](https://drive.google.com/file/d/1ejkyk2OPyCEB5PWT60J7Hu5n5Gs7Kk5R/view?usp=sharing)
 
 ## Credits
 Credit for this project goes to my instructor, teachers assistant, tutor, and fellow students in the DUbootcamp who provided the information and resources I needed to complete this task.
