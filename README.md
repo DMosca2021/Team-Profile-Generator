@@ -3,7 +3,7 @@ Week 10 homework
 
 ## Description 
 
-The object of this homework is to demonstrate my knowledge of object oriented programming. 
+The object of this homework is to demonstrate my knowledge of object oriented programming. My task was to build a Node.js command-line app that takes in information about employees on a software engineering team and then generates an HTML webpage that displays the provided information. I also had to create unit tests for each part of the code and ensure that each test gets passed. Overall this was a challenging homework that I enjoyed digging into. 
 
 ## User Story 
 ```md 

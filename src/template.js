@@ -33,7 +33,7 @@ function createTemplate(data) {
                 </div>
                 <div class="media-content">
                   <p class="title is-4">Manager</p>
-                  <p class="subtitle is-6">${data.managerName}</p>
+                  <p class="subtitle is-6">${data}</p>
                   <p class="subtitle is-6">${data.managerId}</p>
                   <p class="subtitle is-6">${data.managerEmail}</p>
                   <p class="subtitle is-6">${data.managerNum}</p>

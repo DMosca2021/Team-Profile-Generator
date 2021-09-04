@@ -13,7 +13,6 @@ const outputPath = path.join(DIST_DIR, 'index.html');
 const render = require("./src/template")
 
 const teamArray = [];
-const idArray = [];
 
 function initApp() {
 
@@ -67,7 +66,6 @@ function initApp() {
         ]).then(data => {
             const manager = new Manager(data.managerName, data.managerId, data.managerEmail, data.managerNum);
             teamArray.push(manager);
-            idArray.push(data.managerId);
             createTeam();
         });
     }
@@ -147,7 +145,6 @@ function initApp() {
         ]) .then(data => {
             const engineer = new Engineer(data.engineerName, data.engineerId, data.engineerEmail, data.engineerGithub);
             teamArray.push(engineer);
-            idArray.push(data.engineerId);
             createTeam();
         });
     }
@@ -201,7 +198,6 @@ function initApp() {
         ]) .then(data => {
             const intern = new Intern(data.internName, data.internId, data.internEmail, data.internSchool);
             teamArray.push(intern);
-            idArray.push(data.internId);
             createTeam();
         });
     }
@@ -212,7 +208,6 @@ function initApp() {
         }
         console.log("Generating Team Profile.... ");
         console.log(teamArray);
-        console.log(idArray);
         fs.writeFileSync(outputPath, render(teamArray), "utf-8");
     }
 
